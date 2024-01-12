@@ -1678,6 +1678,17 @@ body._lock {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 40px;
+    position: relative;
+  }
+
+  .menu__list::after {
+    content: "";
+    position: absolute;
+    left: 48px;
+    right: 48px;
+    bottom: 0;
+    height: 2px;
+    background: var(--gray);
   }
 
   .menu__close {
