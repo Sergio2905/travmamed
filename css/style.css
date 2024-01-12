@@ -581,7 +581,7 @@ body._lock {
 .banner__slide {
   position: relative;
   aspect-ratio: 1440/660;
-  max-height: 660px;
+  max-height: 330px;
 }
 
 .banner__slide img {
@@ -889,7 +889,12 @@ body._lock {
   overflow-x: hidden;
 }
 
+.feedbacks__slide {
+  height: auto !important;
+}
+
 .feedbacks__item {
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -899,6 +904,11 @@ body._lock {
   line-height: 1.5;
   margin-bottom: 16px;
   flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 .feedbacks__author {
@@ -1851,6 +1861,10 @@ body._lock {
     margin-bottom: var(--margin-t);
   }
 
+  .feedbacks__header {
+    margin-bottom: 24px;
+  }
+
   .sertificates {
     margin-bottom: var(--margin-t);
   }
@@ -1982,6 +1996,10 @@ body._lock {
     border: none;
     padding: 0;
     margin-bottom: 24px;
+  }
+
+  .contacts__map {
+    flex: unset;
   }
 
   .footer__wrapper {
