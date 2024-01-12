@@ -2002,6 +2002,10 @@ body._lock {
     flex: unset;
   }
 
+  .contacts__map iframe {
+    min-height: 330px;
+  }
+
   .footer__wrapper {
     padding: 12px 0;
   }
