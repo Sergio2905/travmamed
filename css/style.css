@@ -196,8 +196,8 @@ body._lock {
   transform: translate(0, -50%);
   width: 10px;
   height: 10px;
-  -webkit-mask: url("../../img/icons/icons.svg#arrow-color") center/contain no-repeat;
-          mask: url("../../img/icons/icons.svg#arrow-color") center/contain no-repeat;
+  -webkit-mask: url("../img/icons/icons.svg#arrow-color") center/contain no-repeat;
+          mask: url("../img/icons/icons.svg#arrow-color") center/contain no-repeat;
   background: var(--semi-green);
 }
 
@@ -283,7 +283,7 @@ body._lock {
   top: 50%;
   transform: translate(5px, -50%) rotate(-90deg);
   left: 100%;
-  background: url("../../img/icons/icons.svg#arrow-color") center/contain no-repeat;
+  background: url("../img/icons/icons.svg#arrow-color") center/contain no-repeat;
   pointer-events: none;
 }
 
