@@ -1196,11 +1196,17 @@ body._lock {
   padding-left: 12px;
   min-height: 330px;
   width: 100%;
+  position: relative;
 }
 
 .contacts__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .footer__top {
@@ -2000,10 +2006,6 @@ body._lock {
 
   .contacts__map {
     flex: unset;
-  }
-
-  .contacts__map iframe {
-    min-height: 330px;
   }
 
   .footer__wrapper {
