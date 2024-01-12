@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240112095601">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__top">
+        <div class="header__container container">
+            <div class="header__body" data-desk="lang, prepend">
+                <div class="header__lang lang" data-move="lang, 1200">
+                    <div class="lang__body">
+                        <div class="lang__select select">
+                            <div class="select__container">
+                                <div class="select__option">
+                                    <input type="radio" id="ua" name="lang" value="ua">
+                                    <label for="ua">
+                                        <picture><source srcset="img/icons/ua-flag.webp" type="image/webp"><img src="img/icons/ua-flag.png" alt="Icon"></picture>
+                                        Українська
+                                    </label>
+                                </div>
+                                <div class="select__option">
+                                    <input type="radio" id="us" name="lang" value="us">
+                                    <label for="us">
+                                        <picture><source srcset="img/icons/us-flag.webp" type="image/webp"><img src="img/icons/us-flag.png" alt="Icon"></picture>
+                                        English
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="select__checked">
+                                <picture><source srcset="img/icons/ua-flag.webp" type="image/webp"><img src="img/icons/ua-flag.png" alt="Icon"></picture>
+                                Українська
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__top-menu top-menu">
+                    <nav class="top-menu__body" data-desk="top-menu, append">
+                        <ul class="top-menu__list" data-move="top-menu, 1200">
+                            <li class="top-menu__item">
+                                <a href="brands.html" class="top-menu__link">Бренди</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">Послуги</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">Партнери</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">Співпраця</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">Новини</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="#" class="top-menu__link">Про компанію</a>
+                            </li>
+                            <li class="top-menu__item">
+                                <a href="contacts.html" class="top-menu__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__main">
+        <div class="header__container container">
+            <div class="header__body">
+                <a href="./" class="header__logo">
+                    <picture>
+                        <source media="(min-width:481px)" srcset="img/icons/logo.svg" type="image/webp">
+                        <source media="(max-width:480px)" srcset="img/icons/logo-mob.svg" type="image/webp">
+                        <img src="img/icons/logo.svg" alt="Image">
+                    </picture>
+                </a>
+                <div class="header__menu menu">
+                    <a href="#" class="menu__link menu__link_cat">Каталог товарів</a>
+                    <div class="menu__wrapper">
+                        <button type="button" class="menu__close">
+                            <svg>
+                                <use href="img/icons/icons.svg#close"></use>
+                            </svg>
+                        </button>
+                        <nav class="menu__body" data-mob="lang, append">
+                            <ul class="menu__list" data-mob="top-menu, after">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Нейрохірургія</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Травматологія-ортопедія</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Хірургія</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">Щелепно-лицьова хірургія</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="menu__contacts menu-contacts">
+                            <p class="menu-contacts__title">Зв’язатися з нами</p>
+                            <a href="#" class="menu-contacts__tel">+38 (067) 480 88 44</a>
+                        </div>
+                        <div class="menu__footer menu-footer">
+                            <div class="menu-footer__socials">
+                                <a href="#" class="menu-footer__social">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#whatsapp"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="menu-footer__social">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#telegram"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="menu-footer__social">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#viber"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="menu-footer__social">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="menu-footer__social">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a href="#" class="menu-footer__logo lazy">
+                                <picture>
+                                    <source data-srcset="img/icons/menu-logo.svg" srcset="img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="img/icons/menu-logo.svg" src="img/plug.png" alt="Image">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__options">
+                    <button type="button" class="header__menu-icon">
+                        <svg>
+                            <use href="img/icons/icons.svg#menu"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <div class="page">
+            <div class="banner">
+                <div class="banner__slider">
+                    <div class="banner__wrapper swiper-wrapper">
+                        <div class="banner__slide swiper-slide lazy">
+                            <picture>
+                                <source data-srcset="img/main/banner.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/main/banner.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="banner__slide swiper-slide lazy">
+                            <picture>
+                                <source data-srcset="img/main/banner.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/main/banner.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="banner__slide swiper-slide lazy">
+                            <picture>
+                                <source data-srcset="img/main/banner.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/main/banner.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="banner__pagination"></div>
+                </div>
+            </div>
+            <div class="features">
+                <div class="features__container container">
+                    <div class="features__body">
+                        <div class="features__item feature">
+                            <div class="feature__body">
+                                <div class="feature__icon">
+                                    <img src="img/features/delivery.svg" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="feature__desc">
+                                <p>Безкоштовна доставка</p>
+                            </div>
+                        </div>
+                        <div class="features__item feature">
+                            <div class="feature__body">
+                                <div class="feature__icon">
+                                    <img src="img/features/clock.svg" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="feature__desc">
+                                <p>Оперативна підтримка клієнтів</p>
+                            </div>
+                        </div>
+                        <div class="features__item feature">
+                            <div class="feature__body">
+                                <div class="feature__icon">
+                                    <img src="img/features/bonus.svg" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="feature__desc">
+                                <p>Бонуси постійним клієнтам</p>
+                            </div>
+                        </div>
+                        <div class="features__item feature">
+                            <div class="feature__body">
+                                <div class="feature__icon">
+                                    <img src="img/features/standart.svg" alt="Icon">
+                                </div>
+                            </div>
+                            <div class="feature__desc">
+                                <p>Міжнародний стандарт якості</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recommend">
+                <div class="recommend__container container">
+                    <div class="recommend__body">
+                        <h2 class="recommend__title">Рекомендовані товари</h2>
+                        <div class="recommend__grid">
+                            <div class="recommend__item recommend__item_first">
+                                <a href="#" class="recommend__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recommend/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recommend/image1.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recommend__name">
+                                    <span>Тазостегнові</span>
+                                    <span>імпланти</span>
+                                </a>
+                            </div>
+                            <div class="recommend__item recommend__item_second">
+                                <a href="#" class="recommend__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recommend/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recommend/image2.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recommend__name">
+                                    <span>3D-друк</span>
+                                </a>
+                            </div>
+                            <div class="recommend__item recommend__item_third">
+                                <a href="#" class="recommend__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recommend/image3.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recommend/image3.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recommend__name">
+                                    <span>Гвинти</span>
+                                    <span>злиття хребта</span>
+                                </a>
+                            </div>
+                            <div class="recommend__item recommend__item_fourth">
+                                <a href="#" class="recommend__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recommend/image4.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recommend/image4.png" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recommend__name">
+                                    <span>Лапароскопічні</span>
+                                    <span>ручки</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking">
+                <div class="booking__container container">
+                    <div class="booking__body">
+                        <h2 class="booking__title">Безкоштовна консультація</h2>
+                        <p class="booking__intro">
+                            Є запитання та потрібна допомога?<br>
+                            Отримай безкоштовно консультацію від спеціаліста.
+                        </p>
+                        <form action="#" class="booking__form">
+                            <input type="text" placeholder="Ваш номер телефону або e-mail">
+                            <button type="submit" class="booking__btn">Замовити</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="feedbacks">
+                <div class="feedbacks__container container">
+                    <div class="feedbacks__body">
+                        <div class="feedbacks__header">
+                            <h2 class="feedbacks__title title">Відгуки</h2>
+                            <div class="feedbacks__navigation navigation">
+                                <button type="button" class="navigation__prev">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#nav"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="navigation__next">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#nav"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="feedbacks__slider">
+                            <div class="feedbacks__wrapper swiper-wrapper">
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image1.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image1.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image2.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image2.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image3.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image3.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image4.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image4.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi hic fuga,
+                                            earum eius nostrum ipsum sint accusamus dignissimos at optio.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image3.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image3.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <p class="feedbacks__text">
+                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
+                                        </p>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="img/feedbacks/image4.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/feedbacks/image4.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sertificates">
+                <div class="sertificates__container container">
+                    <div class="sertificates__body">
+                        <div class="sertificates__header">
+                            <h2 class="sertificates__title title">Сертифікати</h2>
+                            <div class="sertificates__navigation navigation">
+                                <button type="button" class="navigation__prev">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#nav"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="navigation__next">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#nav"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sertificates__slider">
+                            <div class="sertificates__wrapper swiper-wrapper">
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image1.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image1.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image2.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image2.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image3.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image3.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image4.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image4.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image5.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image5.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="sertificates__slide swiper-slide">
+                                    <div class="sertificates__item lazy">
+                                        <picture>
+                                            <source data-srcset="img/sertificates/image6.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/sertificates/image6.jpg" src="img/plug.png"
+                                                alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="recent">
+                <div class="recent__container container">
+                    <div class="recent__body">
+                        <h2 class="recent__title title">Останні новини</h2>
+                        <div class="recent__block">
+                            <div class="recent__item">
+                                <a href="#" class="recent__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recent/image1.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recent/image1.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recent__name">
+                                    МОЗ розширило список фахівців, які можуть виконувати переливання донорської крові
+                                </a>
+                            </div>
+                            <div class="recent__item">
+                                <a href="#" class="recent__image lazy">
+                                    <picture>
+                                        <source data-srcset="img/recent/image2.webp" srcset="img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="img/recent/image2.jpg" src="img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="#" class="recent__name">
+                                    В Україні вперше виконали спліт-трансплантацію печінки: врятували двох пацієнтів
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer__top">
+        <div class="footer__container container">
+            <div class="footer__wrapper">
+                <a href="#" class="footer__logo lazy">
+                    <picture>
+                        <source data-srcset="img/icons/footer-logo.svg" srcset="img/plug.png" type="image/webp">
+                        <img data-src="img/icons/footer-logo.svg" src="img/plug.png" alt="Image">
+                    </picture>
+                </a>
+                <div class="footer__body">
+                    <div class="footer__main" data-spollers="993,max" data-desk="contacts, after"
+                        data-mob="cat, append">
+                        <div class="footer__block">
+                            <p class="footer__title" data-spoller>
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                                Категорії:
+                            </p>
+                            <nav class="footer__menu" data-desk="cat, after">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#" class="footer__link">Нейрохірургія</a></li>
+                                    <li class="footer__item"><a href="#"
+                                            class="footer__link">Травматологія-ортопедія</a>
+                                    </li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Хірургія</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Щелепно-лицьова
+                                            хірургія</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="footer__cat" data-move="cat, 993">Каталог товарів</a>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title" data-spoller>
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                                Бренди:
+                            </p>
+                            <nav class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#" class="footer__link">And Tech</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Bıçakcılar</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Bioceramed Portugal</a>
+                                    </li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Jiangsu Jinlu Medical
+                                            Device</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Lider Medica</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Orthotech</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__block" data-mob="contacts, after">
+                            <p class="footer__title" data-spoller>
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                                Компанія:
+                            </p>
+                            <nav class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__item"><a href="#" class="footer__link">Послуги</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Партнери</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Бренди</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Співпраця</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Новини</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Про компанію</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">Контакти</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="footer__block" data-spollers="576,max" data-move="contacts, 576">
+                        <p class="footer__title" data-spoller>
+                            <svg>
+                                <use href="img/icons/icons.svg#arrow"></use>
+                            </svg>
+                            Контакти:
+                        </p>
+                        <ul class="footer__list">
+                            <li class="footer__contact">
+                                <div class="footer__icon">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#location"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__info">м.Київ, вул. Ил’єнка, 81а, оф.115</div>
+                            </li>
+                            <li class="footer__contact">
+                                <div class="footer__icon">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__info">+38 (067) 480 88 44</div>
+                            </li>
+                            <li class="footer__contact">
+                                <div class="footer__icon">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#mail"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__info">info@travmamed.ua</div>
+                            </li>
+                            <li class="footer__contact">
+                                <div class="footer__icon">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#facebook"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__info">/travmamed.ua</div>
+                            </li>
+                            <li class="footer__contact">
+                                <div class="footer__icon">
+                                    <svg>
+                                        <use href="img/icons/icons.svg#instagram"></use>
+                                    </svg>
+                                </div>
+                                <div class="footer__info">/travmamed.ua</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__container container">
+            <div class="footer__rights">Copyright © 2023 Travmamed. All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <script src="js/app.min.js?_v=20240112095601"></script>
+</body>
+
+</html>
