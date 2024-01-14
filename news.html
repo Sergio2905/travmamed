@@ -5,7 +5,7 @@
     <title>Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240112151508">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240114120850">
     <meta name="description" content="Описание" />
     <meta name="keywords" content="Ключевые слова" />
 </head>
@@ -21,14 +21,14 @@
                     <div class="lang__body">
                         <div class="lang__select select">
                             <div class="select__container">
-                                <div class="select__option">
+                                <div class="select__option" data-lang="ua">
                                     <input type="radio" id="ua" name="lang" value="ua">
                                     <label for="ua">
                                         <picture><source srcset="img/icons/ua-flag.webp" type="image/webp"><img src="img/icons/ua-flag.png" alt="Icon"></picture>
                                         UA
                                     </label>
                                 </div>
-                                <div class="select__option">
+                                <div class="select__option" data-lang="en">
                                     <input type="radio" id="us" name="lang" value="us">
                                     <label for="us">
                                         <picture><source srcset="img/icons/us-flag.webp" type="image/webp"><img src="img/icons/us-flag.png" alt="Icon"></picture>
@@ -175,7 +175,7 @@
                 <div class="news__container container">
                     <div class="news__body">
                         <h2 class="news__title title">Новини</h2>
-                        <div class="news__options">
+                        <!-- <div class="news__options">
                             <div class="news__info">
                                 Відображено 1 – 4 із 12 результатів
                             </div>
@@ -196,7 +196,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="news__block">
                             <div class="news__item">
                                 <a href="single.html" class="news__image lazy">
@@ -278,7 +278,7 @@
                             </nav>
                             <a href="catalog.pdf" class="footer__cat" data-move="cat, 993">Каталог товарів</a>
                         </div>
-                        <div class="footer__block">
+                        <!-- <div class="footer__block">
                             <p class="footer__title" data-spoller>
                                 <svg>
                                     <use href="img/icons/icons.svg#arrow"></use>
@@ -287,17 +287,17 @@
                             </p>
                             <nav class="footer__menu">
                                 <ul class="footer__list">
-                                    <!-- <li class="footer__item"><a href="#" class="footer__link">And Tech</a></li>
+                                    <li class="footer__item"><a href="#" class="footer__link">And Tech</a></li>
                                     <li class="footer__item"><a href="#" class="footer__link">Bıçakcılar</a></li>
                                     <li class="footer__item"><a href="#" class="footer__link">Bioceramed Portugal</a>
                                     </li>
                                     <li class="footer__item"><a href="#" class="footer__link">Jiangsu Jinlu Medical
                                             Device</a></li>
                                     <li class="footer__item"><a href="#" class="footer__link">Lider Medica</a></li>
-                                    <li class="footer__item"><a href="#" class="footer__link">Orthotech</a></li> -->
+                                    <li class="footer__item"><a href="#" class="footer__link">Orthotech</a></li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div> -->
                         <div class="footer__block" data-mob="contacts, after">
                             <p class="footer__title" data-spoller>
                                 <svg>
@@ -309,11 +309,12 @@
                                 <ul class="footer__list">
                                     <!-- <li class="footer__item"><a href="#" class="footer__link">Послуги</a></li>
                                     <li class="footer__item"><a href="#" class="footer__link">Партнери</a></li> -->
-                                    <li class="footer__item"><a href="#" class="footer__link">Бренди</a></li>
+                                    <li class="footer__item"><a href="brands.html" class="footer__link">Бренди</a></li>
                                     <!-- <li class="footer__item"><a href="#" class="footer__link">Співпраця</a></li> -->
-                                    <li class="footer__item"><a href="#" class="footer__link">Новини</a></li>
+                                    <li class="footer__item"><a href="news.html" class="footer__link">Новини</a></li>
                                     <!-- <li class="footer__item"><a href="#" class="footer__link">Про компанію</a></li> -->
-                                    <li class="footer__item"><a href="#" class="footer__link">Контакти</a></li>
+                                    <li class="footer__item"><a href="contacts.html" class="footer__link">Контакти</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -340,7 +341,7 @@
                                         <use href="img/icons/icons.svg#phone"></use>
                                     </svg>
                                 </div>
-                                <div class="footer__info">+38 (067) 480 88 44</div>
+                                <a href="tel:380674808844" class="footer__info">+38 (067) 480 88 44</a>
                             </li>
                             <li class="footer__contact">
                                 <div class="footer__icon">
@@ -348,7 +349,7 @@
                                         <use href="img/icons/icons.svg#mail"></use>
                                     </svg>
                                 </div>
-                                <div class="footer__info">info@travmamed.ua</div>
+                                <a href="mailto:info@travmamed.ua" class="footer__info">info@travmamed.ua</a>
                             </li>
                             <li class="footer__contact">
                                 <div class="footer__icon">
@@ -356,7 +357,7 @@
                                         <use href="img/icons/icons.svg#facebook"></use>
                                     </svg>
                                 </div>
-                                <div class="footer__info">/travmamed.ua</div>
+                                <a href="https://www.facebook.com/Travmamed.ua/" class="footer__info">/travmamed.ua</a>
                             </li>
                             <li class="footer__contact">
                                 <div class="footer__icon">
@@ -364,7 +365,7 @@
                                         <use href="img/icons/icons.svg#instagram"></use>
                                     </svg>
                                 </div>
-                                <div class="footer__info">/travmamed.ua</div>
+                                <a href="https://www.instagram.com/Travmamed.ua/" class="footer__info">/travmamed.ua</a>
                             </li>
                         </ul>
                     </div>
@@ -381,7 +382,7 @@
     </div>
 
     
-    <script src="js/app.min.js?_v=20240112151508"></script>
+    <script src="js/app.min.js?_v=20240114120850"></script>
 </body>
 
 </html>

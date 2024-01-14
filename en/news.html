@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Travmamed</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <meta name="description" content="Описание" />
+    <meta name="keywords" content="Ключевые слова" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="header__container container">
+                    <div class="header__body" data-desk="lang, prepend">
+                        <div class="header__lang lang" data-move="lang, 1200">
+                            <div class="lang__body">
+                                <div class="lang__select select">
+                                    <div class="select__container">
+                                        <div class="select__option" data-lang="ua">
+                                            <input type="radio" id="ua" name="lang" value="ua">
+                                            <label for="ua">
+                                                <picture>
+                                                    <source srcset="/img/icons/ua-flag.webp" type="image/webp">
+                                                    <img src="/img/icons/ua-flag.png" alt="Icon">
+                                                </picture>
+                                                UA
+                                            </label>
+                                        </div>
+                                        <div class="select__option" data-lang="en">
+                                            <input type="radio" id="us" name="lang" value="us">
+                                            <label for="us">
+                                                <picture>
+                                                    <source srcset="/img/icons/us-flag.webp" type="image/webp">
+                                                    <img src="/img/icons/us-flag.png" alt="Icon">
+                                                </picture>
+                                                EN
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="select__checked">
+                                        <picture>
+                                            <source srcset="/img/icons/us-flag.webp" type="image/webp">
+                                            <img src="/img/icons/us-flag.png" alt="Icon">
+                                        </picture>
+                                        EN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__top-menu top-menu">
+                            <nav class="top-menu__body" data-desk="top-menu, append">
+                                <ul class="top-menu__list" data-move="top-menu, 1200">
+                                    <li class="top-menu__item">
+                                        <a href="brands.html" class="top-menu__link">Бренди</a>
+                                    </li>
+                                    <!-- <li class="top-menu__item">
+                                        <a href="#" class="top-menu__link">Послуги</a>
+                                    </li>
+                                    <li class="top-menu__item">
+                                        <a href="#" class="top-menu__link">Партнери</a>
+                                    </li>
+                                    <li class="top-menu__item">
+                                        <a href="#" class="top-menu__link">Співпраця</a>
+                                    </li> -->
+                                    <li class="top-menu__item">
+                                        <a href="news.html" class="top-menu__link">Новини</a>
+                                    </li>
+                                    <!-- <li class="top-menu__item">
+                                        <a href="#" class="top-menu__link">Про компанію</a>
+                                    </li> -->
+                                    <li class="top-menu__item">
+                                        <a href="contacts.html" class="top-menu__link">Контакти</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__main">
+                <div class="header__container container">
+                    <div class="header__body">
+                        <a href="./" class="header__logo">
+                            <picture>
+                                <source media="(min-width:481px)" srcset="/img/icons/logo.svg" type="image/webp">
+                                <source media="(max-width:480px)" srcset="/img/icons/logo-mob.svg" type="image/webp">
+                                <img src="/img/icons/logo.svg" alt="Image">
+                            </picture>
+                        </a>
+                        <div class="header__menu menu">
+                            <a href="catalog.pdf" class="menu__link menu__link_cat">Каталог товарів</a>
+                            <div class="menu__wrapper">
+                                <button type="button" class="menu__close">
+                                    <svg>
+                                        <use href="/img/icons/icons.svg#close"></use>
+                                    </svg>
+                                </button>
+                                <nav class="menu__body" data-mob="lang, append">
+                                    <ul class="menu__list" data-mob="top-menu, after">
+                                        <!-- <li class="menu__item">
+                                            <a href="#" class="menu__link">Нейрохірургія</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Травматологія-ортопедія</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Хірургія</a>
+                                        </li>
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">Щелепно-лицьова хірургія</a>
+                                        </li> -->
+                                    </ul>
+                                </nav>
+                                <div class="menu__contacts menu-contacts">
+                                    <p class="menu-contacts__title">Зв’язатися з нами</p>
+                                    <a href="#" class="menu-contacts__tel">+38 (067) 480 88 44</a>
+                                </div>
+                                <div class="menu__footer menu-footer">
+                                    <div class="menu-footer__socials">
+                                        <a href="#" class="menu-footer__social">
+                                            <svg>
+                                                <use href="/img/icons/icons.svg#whatsapp"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="menu-footer__social">
+                                            <svg>
+                                                <use href="/img/icons/icons.svg#telegram"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="menu-footer__social">
+                                            <svg>
+                                                <use href="/img/icons/icons.svg#viber"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="menu-footer__social">
+                                            <svg>
+                                                <use href="/img/icons/icons.svg#facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="menu-footer__social">
+                                            <svg>
+                                                <use href="/img/icons/icons.svg#instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <a href="#" class="menu-footer__logo lazy">
+                                        <picture>
+                                            <source data-srcset="/img/icons/menu-logo.svg" srcset="/img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="/img/icons/menu-logo.svg" src="/img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__options">
+                            <button type="button" class="header__menu-icon">
+                                <svg>
+                                    <use href="/img/icons/icons.svg#menu"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="breadcrumbs">
+            <div class="breadcrumbs__container container">
+                <div class="breadcrumbs__body">
+                    <a href="#" class="breadcrumbs__link">Travmamed</a>
+                    <a href="#" class="breadcrumbs__link active">Новини</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="page">
+            <div class="news">
+                <div class="news__container container">
+                    <div class="news__body">
+                        <h2 class="news__title title">Новини</h2>
+                        <!-- <div class="news__options">
+                            <div class="news__info">
+                                Відображено 1 – 4 із 12 результатів
+                            </div>
+                            <div class="news__sort">
+                                <div class="select">
+                                    <div class="select__container">
+                                        <div class="select__option">
+                                            <input type="radio" id="option1" name="name">
+                                            <label for="option1">Останні</label>
+                                        </div>
+                                        <div class="select__option">
+                                            <input type="radio" id="option2" name="name">
+                                            <label for="option2">Старі</label>
+                                        </div>
+                                    </div>
+                                    <div class="select__checked">
+                                        Останні
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="news__block">
+                            <div class="news__item">
+                                <a href="single.html" class="news__image lazy">
+                                    <picture>
+                                        <source data-srcset="/img/news/image1.webp" srcset="/img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="/img/news/image1.jpg" src="/img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="single.html" class="news__name">
+                                    МОЗ розширило список фахівців, які можуть виконувати переливання донорської крові
+                                </a>
+                            </div>
+                            <div class="news__item">
+                                <a href="single2.html" class="news__image lazy">
+                                    <picture>
+                                        <source data-srcset="/img/news/image2.webp" srcset="/img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="/img/news/image2.jpg" src="/img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
+                                <a href="single2.html" class="news__name">
+                                    В Україні вперше виконали спліт-трансплантацію печінки: врятували двох пацієнтів
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking">
+                <div class="booking__container container">
+                    <div class="booking__body">
+                        <h2 class="booking__title">Безкоштовна консультація</h2>
+                        <p class="booking__intro">
+                            Є запитання та потрібна допомога?<br>
+                            Отримай безкоштовно консультацію від спеціаліста.
+                        </p>
+                        <form action="#" class="booking__form">
+                            <input type="text" placeholder="Ваш номер телефону або e-mail">
+                            <button type="submit" class="booking__btn" data-modal="order">Замовити</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__container container">
+                <div class="footer__wrapper">
+                    <a href="#" class="footer__logo lazy">
+                        <picture>
+                            <source data-srcset="/img/icons/footer-logo.svg" srcset="/img/plug.png" type="image/webp">
+                            <img data-src="/img/icons/footer-logo.svg" src="/img/plug.png" alt="Image">
+                        </picture>
+                    </a>
+                    <div class="footer__body">
+                        <div class="footer__main" data-spollers="993,max" data-desk="contacts, after"
+                            data-mob="cat, append">
+                            <div class="footer__block">
+                                <p class="footer__title" data-spoller>
+                                    <svg>
+                                        <use href="/img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                    Категорії:
+                                </p>
+                                <nav class="footer__menu" data-desk="cat, after">
+                                    <ul class="footer__list">
+                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Нейрохірургія</a></li>
+                                        <li class="footer__item"><a href="#"
+                                                class="footer__link">Травматологія-ортопедія</a>
+                                        </li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Хірургія</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Щелепно-лицьова
+                                                хірургія</a>
+                                        </li> -->
+                                    </ul>
+                                </nav>
+                                <a href="catalog.pdf" class="footer__cat" data-move="cat, 993">Каталог товарів</a>
+                            </div>
+                            <!-- <div class="footer__block">
+                                <p class="footer__title" data-spoller>
+                                    <svg>
+                                        <use href="/img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                    Бренди:
+                                </p>
+                                <nav class="footer__menu">
+                                    <ul class="footer__list">
+                                        <li class="footer__item"><a href="#" class="footer__link">And Tech</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Bıçakcılar</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Bioceramed Portugal</a>
+                                        </li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Jiangsu Jinlu Medical
+                                                Device</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Lider Medica</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Orthotech</a></li>
+                                    </ul>
+                                </nav>
+                            </div> -->
+                            <div class="footer__block" data-mob="contacts, after">
+                                <p class="footer__title" data-spoller>
+                                    <svg>
+                                        <use href="/img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                    Компанія:
+                                </p>
+                                <nav class="footer__menu">
+                                    <ul class="footer__list">
+                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Послуги</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Партнери</a></li> -->
+                                        <li class="footer__item"><a href="brands.html" class="footer__link">Бренди</a>
+                                        </li>
+                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Співпраця</a></li> -->
+                                        <li class="footer__item"><a href="news.html" class="footer__link">Новини</a>
+                                        </li>
+                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Про компанію</a></li> -->
+                                        <li class="footer__item"><a href="contacts.html"
+                                                class="footer__link">Контакти</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="footer__block" data-spollers="576,max" data-move="contacts, 576">
+                            <p class="footer__title" data-spoller>
+                                <svg>
+                                    <use href="/img/icons/icons.svg#arrow"></use>
+                                </svg>
+                                Контакти:
+                            </p>
+                            <ul class="footer__list">
+                                <li class="footer__contact">
+                                    <div class="footer__icon">
+                                        <svg>
+                                            <use href="/img/icons/icons.svg#location"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="footer__info">м.Київ, вул. Ил’єнка, 81а, оф.115</div>
+                                </li>
+                                <li class="footer__contact">
+                                    <div class="footer__icon">
+                                        <svg>
+                                            <use href="/img/icons/icons.svg#phone"></use>
+                                        </svg>
+                                    </div>
+                                    <a href="tel:380674808844" class="footer__info">+38 (067) 480 88 44</a>
+                                </li>
+                                <li class="footer__contact">
+                                    <div class="footer__icon">
+                                        <svg>
+                                            <use href="/img/icons/icons.svg#mail"></use>
+                                        </svg>
+                                    </div>
+                                    <a href="mailto:info@travmamed.ua" class="footer__info">info@travmamed.ua</a>
+                                </li>
+                                <li class="footer__contact">
+                                    <div class="footer__icon">
+                                        <svg>
+                                            <use href="/img/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </div>
+                                    <a href="https://www.facebook.com/Travmamed.ua/"
+                                        class="footer__info">/travmamed.ua</a>
+                                </li>
+                                <li class="footer__contact">
+                                    <div class="footer__icon">
+                                        <svg>
+                                            <use href="/img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </div>
+                                    <a href="https://www.instagram.com/Travmamed.ua/"
+                                        class="footer__info">/travmamed.ua</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__container container">
+                <div class="footer__rights">Copyright © 2023 Travmamed. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <div class="modal" id="order">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="/img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title title">Заявка для зв’язку з менеджером</h2>
+                <p class="modal__text">Повідомте наступну інформацію</p>
+                <form action="#" class="modal__form">
+                    <input type="text" placeholder="Ваш номер телефону або e-mail" name="email">
+                    <input type="text" placeholder="Ім’я" name="name">
+                    <div class="modal__check checkbox">
+                        Погоджуюсь з правилами
+                        <input type="checkbox" name="agree">
+                    </div>
+                    <button type="submit" class="modal__btn" data-modal="done">Відправити</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="done">
+        <div class="modal__wrapper">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="/img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+                <h2 class="modal__title title">Вашу заявку успішно відправлено</h2>
+                <p class="modal__text">З вами зв'яжеться менеджер</p>
+                <a href="/en" class="modal__btn">Повернутися на Головну</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.min.js"></script>
+</body>
+
+</html>
