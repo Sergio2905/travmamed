@@ -5,7 +5,7 @@
     <title>Project</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20240114125002">
+    <link rel="stylesheet" href="css/style.min.css?_v=20240115135322">
     <meta name="description" content="Описание" />
     <meta name="keywords" content="Ключевые слова" />
 </head>
@@ -236,7 +236,7 @@
                         </p>
                         <form action="#" class="booking__form">
                             <input type="text" placeholder="Ваш номер телефону або e-mail">
-                            <button type="submit" class="booking__btn">Замовити</button>
+                            <button type="submit" class="booking__btn" data-modal="order">Замовити</button>
                         </form>
                     </div>
                 </div>
@@ -333,7 +333,7 @@
                                         <use href="img/icons/icons.svg#location"></use>
                                     </svg>
                                 </div>
-                                <div class="footer__info">м.Київ, вул. Ил’єнка, 81а, оф.115</div>
+                                <div class="footer__info">м. Київ, вул. Іллєнка, 81а, оф. 115</div>
                             </li>
                             <li class="footer__contact">
                                 <div class="footer__icon">
@@ -381,8 +381,44 @@
 </footer>
     </div>
 
-    
-    <script src="js/app.min.js?_v=20240114125002"></script>
+    <div class="modal" id="order">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <button type="button" class="modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title title">Заявка для зв’язку з менеджером</h2>
+            <p class="modal__text">Повідомте наступну інформацію</p>
+            <form action="#" class="modal__form">
+                <input type="text" placeholder="Ваш номер телефону або e-mail" name="email">
+                <input type="text" placeholder="Ім’я" name="name">
+                <div class="modal__check checkbox">
+                    Погоджуюсь з правилами
+                    <input type="checkbox" name="agree">
+                </div>
+                <button type="submit" class="modal__btn" data-modal="done">Відправити</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="done">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <button type="button" class="modal__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title title">Вашу заявку успішно відправлено</h2>
+            <p class="modal__text">З вами зв'яжеться менеджер</p>
+            <a href="/" class="modal__btn">Повернутися на Головну</a>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20240115135322"></script>
 </body>
 
 </html>
