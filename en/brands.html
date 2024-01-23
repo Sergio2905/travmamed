@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
     <meta name="description" content="Описание" />
     <meta name="keywords" content="Ключевые слова" />
 </head>
@@ -187,14 +188,14 @@
                         <h1 class="brands__title title">Бренди</h1>
                         <div class="brands__grid">
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image1.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image1.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     Jiangsu Jinlu Group
                                 </a>
                                 <p class="brands__desc">
@@ -204,14 +205,14 @@
                                 </p>
                             </div>
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image2.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image2.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     Bioceramed
                                 </a>
                                 <p class="brands__desc">
@@ -221,14 +222,14 @@
                                 </p>
                             </div>
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image3.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image3.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     And Tech
                                 </a>
                                 <p class="brands__desc">
@@ -238,14 +239,14 @@
                                 </p>
                             </div>
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image4.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image4.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     Bıçakcılar
                                 </a>
                                 <p class="brands__desc">
@@ -254,14 +255,14 @@
                                 </p>
                             </div>
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image5.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image5.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     Leader medica
                                 </a>
                                 <p class="brands__desc">
@@ -270,14 +271,14 @@
                                 </p>
                             </div>
                             <div class="brands__item">
-                                <a href="#" class="brands__logo lazy">
+                                <a href="brand.html" class="brands__logo lazy">
                                     <picture>
                                         <source data-srcset="../img/brands/image6.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/brands/image6.png" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
-                                <a href="#" class="brands__name">
+                                <a href="brand.html" class="brands__name">
                                     Orthotech
                                 </a>
                                 <p class="brands__desc">
@@ -409,7 +410,7 @@
                             Отримай безкоштовно консультацію від спеціаліста.
                         </p>
                         <form action="#" class="booking__form">
-                            <input type="text" placeholder="Ваш номер телефону або e-mail">
+                            <!-- <input type="text" placeholder="Ваш номер телефону або e-mail" name="contact"> -->
                             <button type="submit" class="booking__btn" data-modal="order">Замовити</button>
                         </form>
                     </div>
@@ -571,16 +572,69 @@
                     </svg>
                 </button>
                 <h2 class="modal__title title">Заявка для зв’язку з менеджером</h2>
-                <p class="modal__text">Повідомте наступну інформацію</p>
-                <form action="#" class="modal__form">
-                    <input type="text" placeholder="Ваш номер телефону або e-mail" name="email">
-                    <input type="text" placeholder="Ім’я" name="name">
-                    <div class="modal__check checkbox">
-                        Погоджуюсь з правилами
-                        <input type="checkbox" name="agree">
+                <p class="modal__text">За безкоштовною консультацією, будь ласка, звертайтесь у будь-який зручний для
+                    вас
+                    спосіб:
+                </p>
+                <div class="modal__contacts contacts">
+                    <div class="contacts__block">
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts__data">
+                                <a href="tel:+380674808844" class="contacts__details">+38 (067) 480 88
+                                    44</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts__data">
+                                <a href="mailto:info@travmamed.ua" class="contacts__details">info@travmamed.ua</a>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="modal__btn" data-modal="done">Відправити</button>
-                </form>
+                    <div class="contacts__block">
+                        <div class="contacts__links">
+                            <a href="https://www.facebook.com/Travmamed.ua/" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/Travmamed.ua/" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__block">
+                        <div class="contacts__links">
+                            <a href="https://wa.me/380674808844" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/@Travmamed_ua" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                            <a href="viber://chat?number=%2B380674808844" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="modal__btn modal__close">Добре</button>
             </div>
         </div>
     </div>
@@ -595,7 +649,7 @@
                 </button>
                 <h2 class="modal__title title">Вашу заявку успішно відправлено</h2>
                 <p class="modal__text">З вами зв'яжеться менеджер</p>
-                <a href="/en" class="modal__btn">Повернутися на Головну</a>
+                <a href="/" class="modal__btn">Повернутися на Головну</a>
             </div>
         </div>
     </div>

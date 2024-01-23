@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.min.css?_v=20240114120850">
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
     <meta name="description" content="Описание" />
     <meta name="keywords" content="Ключевые слова" />
 </head>
@@ -197,27 +198,6 @@
                                     <img data-src="../img/main/image3.jpg" src="../img/plug.png" alt="Image">
                                 </picture>
                             </div>
-                            <div class="banner__slide swiper-slide lazy">
-                                <picture>
-                                    <source data-srcset="../img/main/image4.webp" srcset="../img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="../img/main/image4.jpg" src="../img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="banner__slide swiper-slide lazy">
-                                <picture>
-                                    <source data-srcset="../img/main/image5.webp" srcset="../img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="../img/main/image5.jpg" src="../img/plug.png" alt="Image">
-                                </picture>
-                            </div>
-                            <div class="banner__slide swiper-slide lazy">
-                                <picture>
-                                    <source data-srcset="../img/main/image6.webp" srcset="../img/plug.png"
-                                        type="image/webp">
-                                    <img data-src="../img/main/image6.jpg" src="../img/plug.png" alt="Image">
-                                </picture>
-                            </div>
                         </div>
                         <div class="banner__pagination"></div>
                     </div>
@@ -274,44 +254,26 @@
                     <div class="recommend__body">
                         <h2 class="recommend__title">Рекомендовані товари</h2>
                         <div class="recommend__grid">
-                            <div class="recommend__item">
-                                <a href="#" class="recommend__image lazy">
-                                    <picture>
-                                        <source data-srcset="../img/recommend/image1.webp" srcset="../img/plug.png"
-                                            type="image/webp">
-                                        <img data-src="../img/recommend/image1.png" src="../img/plug.png" alt="Image">
-                                    </picture>
-                                </a>
-                                <a href="#" class="recommend__name">
-                                    <span>Тазостегнові</span>
-                                    <span>імпланти</span>
-                                </a>
+                            <div class="recommend__image lazy">
+                                <picture>
+                                    <source data-srcset="../img/recommend/image1.webp" srcset="../img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="../img/recommend/image1.png" src="../img/plug.png" alt="Image">
+                                </picture>
                             </div>
-                            <div class="recommend__item">
-                                <a href="#" class="recommend__image lazy">
-                                    <picture>
-                                        <source data-srcset="../img/recommend/image3.webp" srcset="../img/plug.png"
-                                            type="image/webp">
-                                        <img data-src="../img/recommend/image3.png" src="../img/plug.png" alt="Image">
-                                    </picture>
-                                </a>
-                                <a href="#" class="recommend__name">
-                                    <span>Гвинти</span>
-                                    <span>злиття хребта</span>
-                                </a>
+                            <div class="recommend__image lazy">
+                                <picture>
+                                    <source data-srcset="../img/recommend/image2.webp" srcset="../img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="../img/recommend/image2.png" src="../img/plug.png" alt="Image">
+                                </picture>
                             </div>
-                            <div class="recommend__item">
-                                <a href="#" class="recommend__image lazy">
-                                    <picture>
-                                        <source data-srcset="../img/recommend/image4.webp" srcset="../img/plug.png"
-                                            type="image/webp">
-                                        <img data-src="../img/recommend/image4.png" src="../img/plug.png" alt="Image">
-                                    </picture>
-                                </a>
-                                <a href="#" class="recommend__name">
-                                    <span>Лапароскопічні</span>
-                                    <span>ручки</span>
-                                </a>
+                            <div class="recommend__image lazy">
+                                <picture>
+                                    <source data-srcset="../img/recommend/image3.webp" srcset="../img/plug.png"
+                                        type="image/webp">
+                                    <img data-src="../img/recommend/image3.png" src="../img/plug.png" alt="Image">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -326,7 +288,7 @@
                             Отримай безкоштовно консультацію від спеціаліста.
                         </p>
                         <form action="#" class="booking__form">
-                            <input type="text" placeholder="Ваш номер телефону або e-mail">
+                            <!-- <input type="text" placeholder="Ваш номер телефону або e-mail" name="contact"> -->
                             <button type="submit" class="booking__btn" data-modal="order">Замовити</button>
                         </form>
                     </div>
@@ -354,9 +316,9 @@
                             <div class="feedbacks__wrapper swiper-wrapper">
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>Оперативна доставка 24/7, допомога війсковим</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
@@ -366,15 +328,17 @@
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Шмагой <br>
+                                                Василь Леонідович</div>
                                         </div>
+                                        <div class="feedbacks__extra">Клініка "Добробут"</div>
                                     </div>
                                 </div>
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>організація складу на базі лікарні для швидкого .......</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
@@ -384,15 +348,17 @@
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Петренко<br>
+                                                Олег Степанович </div>
                                         </div>
+                                        <div class="feedbacks__extra">Буська ЦРЛ</div>
                                     </div>
                                 </div>
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>Співпрацюємо багато років, широкий асортимент та оперативний сервіс.</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
@@ -402,15 +368,17 @@
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Богдан<br>
+                                                Іван Степанович</div>
                                         </div>
+                                        <div class="feedbacks__extra">Військовий Госпіталь, Львів</div>
                                     </div>
                                 </div>
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>Широкий асортимент все в одному місці</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
@@ -420,45 +388,90 @@
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Шмиголь<br>
+                                                Ігор Анатолійович</div>
                                         </div>
+                                        <div class="feedbacks__extra">Клініка "Адоніс"</div>
                                     </div>
                                 </div>
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi hic fuga,
-                                            earum eius nostrum ipsum sint accusamus dignissimos at optio.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>Співпрацюємо багато років, широкий асортимент та оперативний сервіс.</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
-                                                    <source data-srcset="../img/feedbacks/image3.webp"
+                                                    <source data-srcset="../img/feedbacks/image5.webp"
                                                         srcset="../img/plug.png" type="image/webp">
-                                                    <img data-src="../img/feedbacks/image3.jpg" src="../img/plug.png"
+                                                    <img data-src="../img/feedbacks/image5.jpg" src="../img/plug.png"
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Грищук<br>
+                                                Богдан Ярославович</div>
                                         </div>
+                                        <div class="feedbacks__extra">Городняньська ЦРЛ</div>
                                     </div>
                                 </div>
                                 <div class="feedbacks__slide swiper-slide">
                                     <div class="feedbacks__item">
-                                        <p class="feedbacks__text">
-                                            Співпрацюємо багато років, широкий асортимент та оперативний сервіс.
-                                        </p>
+                                        <div class="feedbacks__text">
+                                            <p>Співпрацюємо багато років, широкий асортимент та оперативний сервіс.</p>
+                                        </div>
                                         <div class="feedbacks__author">
                                             <div class="feedbacks__photo lazy">
                                                 <picture>
-                                                    <source data-srcset="../img/feedbacks/image4.webp"
+                                                    <source data-srcset="../img/feedbacks/image6.webp"
                                                         srcset="../img/plug.png" type="image/webp">
-                                                    <img data-src="../img/feedbacks/image4.jpg" src="../img/plug.png"
+                                                    <img data-src="../img/feedbacks/image6.jpg" src="../img/plug.png"
                                                         alt="Image">
                                                 </picture>
                                             </div>
-                                            <div class="feedbacks__name">Науменко Сергій</div>
+                                            <div class="feedbacks__name">Бабак<br>
+                                                Микита Аркадійович </div>
                                         </div>
+                                        <div class="feedbacks__extra">Запорізька ОКДЛ</div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <div class="feedbacks__text">
+                                            <p>Співпрацюємо багато років, широкий асортимент та оперативний сервіс.</p>
+                                        </div>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="../img/feedbacks/image7.webp"
+                                                        srcset="../img/plug.png" type="image/webp">
+                                                    <img data-src="../img/feedbacks/image7.jpg" src="../img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Миронюк<br>
+                                                Євгеній Васильович</div>
+                                        </div>
+                                        <div class="feedbacks__extra">Клініка "Адоніс"</div>
+                                    </div>
+                                </div>
+                                <div class="feedbacks__slide swiper-slide">
+                                    <div class="feedbacks__item">
+                                        <div class="feedbacks__text">
+                                            <p>Співпрацюємо багато років, широкий асортимент та оперативний сервіс.</p>
+                                        </div>
+                                        <div class="feedbacks__author">
+                                            <div class="feedbacks__photo lazy">
+                                                <picture>
+                                                    <source data-srcset="../img/feedbacks/image8.webp"
+                                                        srcset="../img/plug.png" type="image/webp">
+                                                    <img data-src="../img/feedbacks/image8.jpg" src="../img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                            <div class="feedbacks__name">Майструк<br>
+                                                Дмитро Сергійович</div>
+                                        </div>
+                                        <div class="feedbacks__extra">Вінницька ОПЛ</div>
                                     </div>
                                 </div>
                             </div>
@@ -589,25 +602,25 @@
                             <div class="news__item">
                                 <a href="single.html" class="news__image lazy">
                                     <picture>
-                                        <source data-srcset="../img/news/image1.webp" srcset="../img/plug.png"
-                                            type="image/webp">
-                                        <img data-src="../img/news/image1.jpg" src="../img/plug.png" alt="Image">
-                                    </picture>
-                                </a>
-                                <a href="single.html" class="news__name">
-                                    МОЗ розширило список фахівців, які можуть виконувати переливання донорської крові
-                                </a>
-                            </div>
-                            <div class="news__item">
-                                <a href="single2.html" class="news__image lazy">
-                                    <picture>
                                         <source data-srcset="../img/news/image2.webp" srcset="../img/plug.png"
                                             type="image/webp">
                                         <img data-src="../img/news/image2.jpg" src="../img/plug.png" alt="Image">
                                     </picture>
                                 </a>
+                                <a href="single.html" class="news__name">
+                                    Розширення асортименту компанії
+                                </a>
+                            </div>
+                            <div class="news__item">
+                                <a href="single2.html" class="news__image lazy">
+                                    <picture>
+                                        <source data-srcset="../img/news/image1.webp" srcset="../img/plug.png"
+                                            type="image/webp">
+                                        <img data-src="../img/news/image1.jpg" src="../img/plug.png" alt="Image">
+                                    </picture>
+                                </a>
                                 <a href="single2.html" class="news__name">
-                                    В Україні вперше виконали спліт-трансплантацію печінки: врятували двох пацієнтів
+                                    Виставка Medica
                                 </a>
                             </div>
                         </div>
@@ -615,32 +628,31 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__container container">
-                <div class="footer__wrapper">
-                    <a href="#" class="footer__logo lazy">
-                        <picture>
-                            <source data-srcset="../img/icons/footer-logo.svg" srcset="../img/plug.png"
-                                type="image/webp">
-                            <img data-src="../img/icons/footer-logo.svg" src="../img/plug.png" alt="Image">
-                        </picture>
-                    </a>
-                    <div class="footer__body">
-                        <div class="footer__main" data-spollers="993,max" data-desk="contacts, after"
-                            data-mob="cat, append">
-                            <div class="footer__block">
-                                <p class="footer__title" data-spoller>
-                                    <svg>
-                                        <use href="../img/icons/icons.svg#arrow"></use>
-                                    </svg>
-                                    Категорії:
-                                </p>
-                                <nav class="footer__menu" data-desk="cat, after">
-                                    <ul class="footer__list">
-                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Нейрохірургія</a></li>
+        <footer class="footer">
+            <div class="footer__top">
+                <div class="footer__container container">
+                    <div class="footer__wrapper">
+                        <a href="#" class="footer__logo lazy">
+                            <picture>
+                                <source data-srcset="../img/icons/footer-logo.svg" srcset="../img/plug.png"
+                                    type="image/webp">
+                                <img data-src="../img/icons/footer-logo.svg" src="../img/plug.png" alt="Image">
+                            </picture>
+                        </a>
+                        <div class="footer__body">
+                            <div class="footer__main" data-spollers="993,max" data-desk="contacts, after"
+                                data-mob="cat, append">
+                                <div class="footer__block">
+                                    <p class="footer__title" data-spoller>
+                                        <svg>
+                                            <use href="../img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                        Категорії:
+                                    </p>
+                                    <nav class="footer__menu" data-desk="cat, after">
+                                        <ul class="footer__list">
+                                            <!-- <li class="footer__item"><a href="#" class="footer__link">Нейрохірургія</a></li>
                                         <li class="footer__item"><a href="#"
                                                 class="footer__link">Травматологія-ортопедія</a>
                                         </li>
@@ -648,11 +660,11 @@
                                         <li class="footer__item"><a href="#" class="footer__link">Щелепно-лицьова
                                                 хірургія</a>
                                         </li> -->
-                                    </ul>
-                                </nav>
-                                <a href="catalog.pdf" class="footer__cat" data-move="cat, 993">Каталог товарів</a>
-                            </div>
-                            <!-- <div class="footer__block">
+                                        </ul>
+                                    </nav>
+                                    <a href="catalog.pdf" class="footer__cat" data-move="cat, 993">Каталог товарів</a>
+                                </div>
+                                <!-- <div class="footer__block">
                                 <p class="footer__title" data-spoller>
                                     <svg>
                                         <use href="../img/icons/icons.svg#arrow"></use>
@@ -672,92 +684,93 @@
                                     </ul>
                                 </nav>
                             </div> -->
-                            <div class="footer__block" data-mob="contacts, after">
+                                <div class="footer__block" data-mob="contacts, after">
+                                    <p class="footer__title" data-spoller>
+                                        <svg>
+                                            <use href="../img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                        Компанія:
+                                    </p>
+                                    <nav class="footer__menu">
+                                        <ul class="footer__list">
+                                            <!-- <li class="footer__item"><a href="#" class="footer__link">Послуги</a></li>
+                                        <li class="footer__item"><a href="#" class="footer__link">Партнери</a></li> -->
+                                            <li class="footer__item"><a href="brands.html"
+                                                    class="footer__link">Бренди</a>
+                                            </li>
+                                            <!-- <li class="footer__item"><a href="#" class="footer__link">Співпраця</a></li> -->
+                                            <li class="footer__item"><a href="news.html" class="footer__link">Новини</a>
+                                            </li>
+                                            <!-- <li class="footer__item"><a href="#" class="footer__link">Про компанію</a></li> -->
+                                            <li class="footer__item"><a href="contacts.html"
+                                                    class="footer__link">Контакти</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="footer__block" data-spollers="576,max" data-move="contacts, 576">
                                 <p class="footer__title" data-spoller>
                                     <svg>
                                         <use href="../img/icons/icons.svg#arrow"></use>
                                     </svg>
-                                    Компанія:
+                                    Контакти:
                                 </p>
-                                <nav class="footer__menu">
-                                    <ul class="footer__list">
-                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Послуги</a></li>
-                                        <li class="footer__item"><a href="#" class="footer__link">Партнери</a></li> -->
-                                        <li class="footer__item"><a href="brands.html" class="footer__link">Бренди</a>
-                                        </li>
-                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Співпраця</a></li> -->
-                                        <li class="footer__item"><a href="news.html" class="footer__link">Новини</a>
-                                        </li>
-                                        <!-- <li class="footer__item"><a href="#" class="footer__link">Про компанію</a></li> -->
-                                        <li class="footer__item"><a href="contacts.html"
-                                                class="footer__link">Контакти</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                                <ul class="footer__list">
+                                    <li class="footer__contact">
+                                        <div class="footer__icon">
+                                            <svg>
+                                                <use href="../img/icons/icons.svg#location"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="footer__info">м. Київ, вул. Іллєнка, 81а, оф. 115</div>
+                                    </li>
+                                    <li class="footer__contact">
+                                        <div class="footer__icon">
+                                            <svg>
+                                                <use href="../img/icons/icons.svg#phone"></use>
+                                            </svg>
+                                        </div>
+                                        <a href="tel:380674808844" class="footer__info">+38 (067) 480 88 44</a>
+                                    </li>
+                                    <li class="footer__contact">
+                                        <div class="footer__icon">
+                                            <svg>
+                                                <use href="../img/icons/icons.svg#mail"></use>
+                                            </svg>
+                                        </div>
+                                        <a href="mailto:info@travmamed.ua" class="footer__info">info@travmamed.ua</a>
+                                    </li>
+                                    <li class="footer__contact">
+                                        <div class="footer__icon">
+                                            <svg>
+                                                <use href="../img/icons/icons.svg#facebook"></use>
+                                            </svg>
+                                        </div>
+                                        <a href="https://www.facebook.com/Travmamed.ua/"
+                                            class="footer__info">/travmamed.ua</a>
+                                    </li>
+                                    <li class="footer__contact">
+                                        <div class="footer__icon">
+                                            <svg>
+                                                <use href="../img/icons/icons.svg#instagram"></use>
+                                            </svg>
+                                        </div>
+                                        <a href="https://www.instagram.com/Travmamed.ua/"
+                                            class="footer__info">/travmamed.ua</a>
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="footer__block" data-spollers="576,max" data-move="contacts, 576">
-                            <p class="footer__title" data-spoller>
-                                <svg>
-                                    <use href="../img/icons/icons.svg#arrow"></use>
-                                </svg>
-                                Контакти:
-                            </p>
-                            <ul class="footer__list">
-                                <li class="footer__contact">
-                                    <div class="footer__icon">
-                                        <svg>
-                                            <use href="../img/icons/icons.svg#location"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="footer__info">м. Київ, вул. Іллєнка, 81а, оф. 115</div>
-                                </li>
-                                <li class="footer__contact">
-                                    <div class="footer__icon">
-                                        <svg>
-                                            <use href="../img/icons/icons.svg#phone"></use>
-                                        </svg>
-                                    </div>
-                                    <a href="tel:380674808844" class="footer__info">+38 (067) 480 88 44</a>
-                                </li>
-                                <li class="footer__contact">
-                                    <div class="footer__icon">
-                                        <svg>
-                                            <use href="../img/icons/icons.svg#mail"></use>
-                                        </svg>
-                                    </div>
-                                    <a href="mailto:info@travmamed.ua" class="footer__info">info@travmamed.ua</a>
-                                </li>
-                                <li class="footer__contact">
-                                    <div class="footer__icon">
-                                        <svg>
-                                            <use href="../img/icons/icons.svg#facebook"></use>
-                                        </svg>
-                                    </div>
-                                    <a href="https://www.facebook.com/Travmamed.ua/"
-                                        class="footer__info">/travmamed.ua</a>
-                                </li>
-                                <li class="footer__contact">
-                                    <div class="footer__icon">
-                                        <svg>
-                                            <use href="../img/icons/icons.svg#instagram"></use>
-                                        </svg>
-                                    </div>
-                                    <a href="https://www.instagram.com/Travmamed.ua/"
-                                        class="footer__info">/travmamed.ua</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__bottom">
-            <div class="footer__container container">
-                <div class="footer__rights">Copyright © 2023 Travmamed. All Rights Reserved.</div>
+            <div class="footer__bottom">
+                <div class="footer__container container">
+                    <div class="footer__rights">Copyright © 2023 Travmamed. All Rights Reserved.</div>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </div>
 
     <div class="modal" id="order">
@@ -769,16 +782,69 @@
                     </svg>
                 </button>
                 <h2 class="modal__title title">Заявка для зв’язку з менеджером</h2>
-                <p class="modal__text">Повідомте наступну інформацію</p>
-                <form action="#" class="modal__form">
-                    <input type="text" placeholder="Ваш номер телефону або e-mail" name="email">
-                    <input type="text" placeholder="Ім’я" name="name">
-                    <div class="modal__check checkbox">
-                        Погоджуюсь з правилами
-                        <input type="checkbox" name="agree">
+                <p class="modal__text">За безкоштовною консультацією, будь ласка, звертайтесь у будь-який зручний для
+                    вас
+                    спосіб:
+                </p>
+                <div class="modal__contacts contacts">
+                    <div class="contacts__block">
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts__data">
+                                <a href="tel:+380674808844" class="contacts__details">+38 (067) 480 88
+                                    44</a>
+                            </div>
+                        </div>
+                        <div class="contacts__item">
+                            <div class="contacts__icon">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="contacts__data">
+                                <a href="mailto:info@travmamed.ua" class="contacts__details">info@travmamed.ua</a>
+                            </div>
+                        </div>
                     </div>
-                    <button type="submit" class="modal__btn" data-modal="done">Відправити</button>
-                </form>
+                    <div class="contacts__block">
+                        <div class="contacts__links">
+                            <a href="https://www.facebook.com/Travmamed.ua/" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/Travmamed.ua/" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__block">
+                        <div class="contacts__links">
+                            <a href="https://wa.me/380674808844" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                            <a href="https://t.me/@Travmamed_ua" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#telegram"></use>
+                                </svg>
+                            </a>
+                            <a href="viber://chat?number=%2B380674808844" target="_blank" class="contacts__link">
+                                <svg>
+                                    <use href="../img/icons/icons.svg#viber"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="modal__btn modal__close">Добре</button>
             </div>
         </div>
     </div>
@@ -793,7 +859,7 @@
                 </button>
                 <h2 class="modal__title title">Вашу заявку успішно відправлено</h2>
                 <p class="modal__text">З вами зв'яжеться менеджер</p>
-                <a href="/en" class="modal__btn">Повернутися на Головну</a>
+                <a href="/" class="modal__btn">Повернутися на Головну</a>
             </div>
         </div>
     </div>
