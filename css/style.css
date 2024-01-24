@@ -89,6 +89,22 @@ h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "MyriadPro";
+  font-display: swap;
+  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  font-display: swap;
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 :root {
   --app-height: 100%;
   --white: #fff;
@@ -109,7 +125,7 @@ h6 {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "MyriadPro", sans-serif;
   font-weight: 400;
   color: var(--black);
   background: var(--semi-gray);
@@ -143,17 +159,20 @@ body._lock {
   flex-direction: column;
 }
 
-.select {
+.select,
+.lang {
   position: relative;
 }
 
-.select svg {
+.select svg,
+.lang svg {
   width: 10px;
   height: 10px;
   stroke: #000000;
 }
 
-.select__container {
+.select__container,
+.lang__container {
   position: absolute;
   top: 150%;
   left: 50%;
@@ -166,12 +185,14 @@ body._lock {
   border-radius: 4px;
 }
 
-.select__container::-webkit-scrollbar {
+.select__container::-webkit-scrollbar,
+.lang__container::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 
-.select__container._active {
+.select__container._active,
+.lang__container._active {
   max-height: 60px;
   overflow-y: auto;
   border-color: var(--gray);
@@ -179,12 +200,16 @@ body._lock {
   background: #fff;
 }
 
-.select__option {
+.select__option,
+.select .lang-item,
+.lang__option,
+.lang .lang-item {
   padding: 5px 15px 5px 10px;
   transition: all 0.5s ease;
 }
 
-.select__checked {
+.select__checked,
+.lang__checked {
   font-family: "Lato", sans-serif;
   font-size: 0.875rem;
   cursor: pointer;
@@ -195,7 +220,8 @@ body._lock {
   padding: 0 15px 0 10px;
 }
 
-.select__checked::after {
+.select__checked::after,
+.lang__checked::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -208,14 +234,15 @@ body._lock {
   background: var(--semi-green);
 }
 
-.select picture {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.select img,
+.lang img {
   margin-right: 10px;
 }
 
-.select label {
+.select label,
+.select a,
+.lang label,
+.lang a {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -224,15 +251,30 @@ body._lock {
   color: var(--semi-green);
 }
 
-.select label picture {
+.select label picture,
+.select a picture,
+.lang label picture,
+.lang a picture {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10px;
 }
 
-.select input {
+.select input,
+.lang input {
   display: none;
+}
+
+.select span,
+.lang span {
+  text-transform: uppercase;
+  margin-left: 0 !important;
+}
+
+.select__select,
+.lang__select {
+  position: relative;
 }
 
 .navigation__prev,
@@ -1559,7 +1601,7 @@ body._lock {
 }
 
 .error {
-  background: url("../../img/404/bg.webp") center/cover no-repeat;
+  background: url("../img/404/bg.webp") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2329,6 +2371,13 @@ body._lock {
 }
 
 @media (max-width: 1200px) {
+  .select__container,
+  .lang__container {
+    top: 0;
+    left: 100%;
+    transform: translate(20px, 0);
+  }
+
   .header {
     padding: 0;
   }
@@ -2952,7 +3001,10 @@ body._lock {
 }
 
 @media (any-hover: hover) {
-  .select__option:hover {
+  .select__option:hover,
+  .select .lang-item:hover,
+  .lang__option:hover,
+  .lang .lang-item:hover {
     background: var(--semi-gray);
   }
 
