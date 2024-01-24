@@ -1067,14 +1067,6 @@ body._lock {
   flex: 1 1 auto;
 }
 
-.feedbacks__text p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-}
-
 .feedbacks__author {
   display: flex;
   align-items: center;
