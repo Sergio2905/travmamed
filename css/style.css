@@ -2098,9 +2098,10 @@ body._lock {
 }
 
 .image-item__slide {
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: center;
+  height: auto !important;
 }
 
 .image-item__slide picture {
