@@ -2011,12 +2011,16 @@ body._lock {
   display: flex;
   gap: 40px;
   margin-bottom: var(--margin);
+  border-bottom: 1px solid #f5f5f5;
+  padding-bottom: 40px;
 }
 
 .item__images {
   width: 100%;
   flex: 1 1 50%;
   min-width: 0;
+  border: 1px solid #f5f5f5;
+  padding: 24px;
 }
 
 .item__image {
@@ -3119,6 +3123,15 @@ body._lock {
     margin-bottom: var(--margin-t);
     flex-direction: column;
     align-items: center;
+    padding-bottom: 24px;
+  }
+
+  .item__images {
+    padding: 12px;
+  }
+
+  .item__cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer__rights {
@@ -3269,6 +3282,10 @@ body._lock {
 
   .item__wrapper {
     padding: var(--padding-m);
+  }
+
+  .item__video {
+    padding: 0;
   }
 
   .footer__wrapper {
