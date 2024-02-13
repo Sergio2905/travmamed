@@ -1870,21 +1870,6 @@ body._lock {
   padding: 8px 0;
 }
 
-.filter__checkbox {
-  color: #1D2A38;
-  font-size: 1rem;
-  padding: 8px 0;
-}
-
-.filter__checkbox::before,
-.filter__checkbox::after {
-  display: none;
-}
-
-.filter__checkbox:not(:last-child) {
-  margin-bottom: 8px;
-}
-
 .filter__item:not(:last-child) {
   margin-bottom: 8px;
 }
@@ -1893,12 +1878,49 @@ body._lock {
   font-family: "Lato", sans-serif;
   color: #1D2A38;
   font-size: 1rem;
-  padding: 8px 0;
+  padding: 8px 0 8px 30px;
   display: block;
+  position: relative;
 }
 
 .filter__link.active {
   color: var(--light-green);
+}
+
+.filter__link::before,
+.filter__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 20px;
+  height: 20px;
+  transition: all 0.5s ease;
+  border-radius: 5px;
+}
+
+.filter__link::before {
+  border: 1px solid var(--semi-green);
+}
+
+.filter__link::after {
+  -webkit-mask: url("../img/icons/icons.svg#check") center/70% no-repeat;
+          mask: url("../img/icons/icons.svg#check") center/70% no-repeat;
+  background: var(--light-green);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, -50%) scale(0);
+}
+
+.filter__link.active::before {
+  border-color: var(--light-green);
+}
+
+.filter__link.active::after {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -50%) scale(1);
 }
 
 .filter__close {
@@ -2017,7 +2039,7 @@ body._lock {
 
 .item__images {
   width: 100%;
-  flex: 1 1 50%;
+  flex: 1 1 30%;
   min-width: 0;
   border: 1px solid #f5f5f5;
   padding: 24px;
@@ -2028,7 +2050,7 @@ body._lock {
 }
 
 .item__main {
-  flex: 1 1 50%;
+  flex: 1 1 70%;
   display: flex;
   flex-direction: column;
 }
@@ -2803,6 +2825,12 @@ body._lock {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .filter .select__container {
+    top: 100;
+    left: 0;
+    transform: translate(0, 0);
   }
 }
 
