@@ -128,7 +128,7 @@ body._lock {
   height: 100%;
   position: relative;
   overflow: hidden;
-  padding-top: 166px;
+  padding-top: 136px;
 }
 
 .container {
@@ -296,7 +296,7 @@ body._lock {
 }
 
 .breadcrumbs {
-  margin: 24px 0 40px;
+  margin: 24px 0;
 }
 
 .breadcrumbs__body {
@@ -616,7 +616,6 @@ body._lock {
 }
 
 .header {
-  padding-top: 30px;
   background: #fff;
   position: fixed;
   top: 0;
@@ -1783,6 +1782,26 @@ body._lock {
 .catalog__body {
   display: flex;
   gap: 24px;
+  position: relative;
+}
+
+.catalog__body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 10;
+}
+
+.catalog__body.load::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .catalog__filter {
@@ -2116,8 +2135,9 @@ body._lock {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
+  height: 50%;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   pointer-events: none;
   transition: all 0.5s ease;
@@ -2139,7 +2159,7 @@ body._lock {
 .item__more {
   display: block;
   color: var(--semi-green);
-  margin: 24px auto 0;
+  margin: 0 auto;
   transition: all 0.5s ease;
 }
 
@@ -2712,10 +2732,6 @@ body._lock {
     transform: translate(20px, 0);
   }
 
-  .header {
-    padding: 0;
-  }
-
   .header__body {
     justify-content: unset;
   }
@@ -2969,10 +2985,6 @@ body._lock {
 }
 
 @media (max-width: 768px) {
-  .breadcrumbs {
-    margin: 24px 0 24px;
-  }
-
   .pagination {
     margin-top: 24px;
   }
